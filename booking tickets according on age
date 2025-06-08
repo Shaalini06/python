@@ -1,0 +1,18 @@
+ages = list(map(int, input("Enter the ages : ").split()))
+print(ages)
+sum =0
+for x in ages:
+    if x< 5:
+        print("Free  ticket")
+        sum+=0
+    elif 5<=x<=18:
+        print("ticket Rs is :$20")
+        sum+=20
+    elif 19>=x<=60:
+        print("ticket Rs is :$50")
+        sum+=50
+    elif x>60:
+        print("ticket Rs is :30")
+        sum+=30
+total_cost=f"total fare collection :{sum}"
+print (total_cost)
