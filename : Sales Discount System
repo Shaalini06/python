@@ -1,0 +1,14 @@
+price=list(map(int,input("Enter the prices of the product:").split()))
+sum =0
+total_price=0
+for x in price:
+    sum+=x
+    totalAmt=sum
+if sum>=1000:
+    dis=(10/100)*sum
+    print("discount of 10% applied:",dis)
+    total_amt=abs(sum-dis)
+    print("total amount:",total_amt)
+else:
+    total_price=totalAmt
+    print("Total amount:",total_price)
