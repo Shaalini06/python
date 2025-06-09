@@ -1,0 +1,23 @@
+ib_books=list(map(str, input("Enter the books available in libarary:").split()))
+print("choose an a option:")
+print(" 1.Search for a book\n")
+print("2.List all available books\n")
+print("3.Exit\n")
+
+ch=int(input("Enter your choice:"))
+if ch==1:
+    search_book=input("Enter book name to search:")
+    if search_book in lib_books:
+        print(f'"{search_book}" is available')
+    else:
+        print(f'"{search_book}"is not available')
+        
+if ch==2:
+    print("Available books:")
+    for x in lib_books:
+        print("-",x.strip())
+    
+        
+if ch==3:
+    print("Goodbye!")
+    
